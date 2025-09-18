@@ -6,6 +6,6 @@ name = str(input())
 years = int(input())
 print(f'Привет, {name}! Через год тебе будет {years+1}.')
 ```
-[что](./images/lab01/01task.png)
+![что](./images/lab01/01task.png)
 ## задание 2
 это просто круто
