@@ -1,7 +1,10 @@
 # Лабороторная работа №1
 
 ## задание 1
-![КОД](./codes/01.py)
-![result](./images/lab01/01task.png)
+```python
+name = str(input())
+years = int(input())
+print(f'Привет, {name}! Через год тебе будет {years+1}.')
+```
 ## задание 2
 это просто круто
