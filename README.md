@@ -29,7 +29,7 @@ print(f'Итого к оплате:{total:.2f}₽')
 ```
 ![что](./images/lab01/03ex.png)
 
-## задание 3
+## задание 4
 ```python
 m = int(input())
 print(f'{m // 60}:{m % 60}')
