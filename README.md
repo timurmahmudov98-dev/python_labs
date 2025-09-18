@@ -28,3 +28,10 @@ print(f'НДС:{vat_amount:.2f}₽')
 print(f'Итого к оплате:{total:.2f}₽')
 ```
 ![что](./images/lab01/03ex.png)
+
+## задание 3
+```python
+m = int(input())
+print(f'{m // 60}:{m % 60}')
+```
+![что](./images/lab01/04ex.png)
