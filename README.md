@@ -35,3 +35,15 @@ m = int(input())
 print(f'{m // 60}:{m % 60}')
 ```
 ![что](./images/lab01/04ex.png)
+## задание 5
+```python
+fio = input().strip()
+fio_cleaned = ' '.join(fio.split())
+parts = fio_cleaned.split()
+surname, name, patronymic = parts[0], parts[1], parts[2]
+initials = surname[0] + name[0] + patronymic[0] + '.'
+length = len(fio_cleaned)
+print(f"Инициалы: {initials}")
+print(f"Длина (символов): {length}")
+```
+![что](./images/lab01/05ex.png)
