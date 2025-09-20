@@ -6,7 +6,7 @@ name = str(input())
 years = int(input())
 print(f'Привет, {name}! Через год тебе будет {years+1}.')
 ```
-![что](./images/lab01/01ex.png)
+![картинка 1](./images/lab01/01ex.png)
 ## задание 2
 ```python 
 a = float(input())
@@ -15,7 +15,7 @@ sum = a + b
 avg = sum / 2
 print(f'sum={round(sum, 2)}; avg={round(avg, 2)}')
 ```
-![что](./images/lab01/02ex.png)
+![картинка 2](./images/lab01/02ex.png)
 
 ## задание 3
 ```python
@@ -27,14 +27,14 @@ print(f'База после скидки:{base:.2f}₽')
 print(f'НДС:{vat_amount:.2f}₽')
 print(f'Итого к оплате:{total:.2f}₽')
 ```
-![что](./images/lab01/03ex.png)
+![картинка 3](./images/lab01/03ex.png)
 
 ## задание 4
 ```python
 m = int(input())
 print(f'{m // 60}:{m % 60}')
 ```
-![что](./images/lab01/04ex.png)
+![картинка 4](./images/lab01/04ex.png)
 ## задание 5
 ```python
 fio = input().strip()
@@ -46,4 +46,4 @@ length = len(fio_cleaned)
 print(f"Инициалы: {initials}")
 print(f"Длина (символов): {length}")
 ```
-![что](./images/lab01/05ex.png)
+![картинка 5](./images/lab01/05ex.png)
