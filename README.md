@@ -1,5 +1,5 @@
 # Лабороторная работа №1
-
+## i think that is very good
 ## задание 1
 ```python
 name = str(input())
