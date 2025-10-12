@@ -46,3 +46,13 @@ print(f"Инициалы: {initials}")
 print(f"Длина (символов): {length}")
 ```
 ![картинка 5](./images/lab01/05ex.png)
+
+
+# Лабороторная работа №2
+## задание 1.1
+```python
+def min_max(nums):
+    if not nums:
+        raise ValueError
+    
+    return (min(nums), max(nums))
