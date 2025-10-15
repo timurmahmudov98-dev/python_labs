@@ -31,3 +31,23 @@ def row_sums(mat):
 #print(row_sums([[-1, 1], [10, -10]]))
 #print(row_sums([[0, 0], [0, 0]]))
 #print(row_sums([[1, 2], [3]]))
+
+
+def col_sums(mat):
+    if not mat:
+        return []
+    lenn1 = len(mat[0])
+    for i, row in enumerate(mat):
+        if len(row) != lenn1:
+            raise ValueError
+    numcols = len(mat[0])
+    sums = [0] * numcols
+    
+    for row in mat:
+        for j in range(numcols):
+            sums[j] += row[j]
+    return sums
+#print(col_sums([[1, 2, 3], [4, 5, 6]]))
+#print(col_sums([[-1, 1], [10, -10]]))
+#print(col_sums([[0, 0], [0, 0]]))
+#print(col_sums([[1, 2], [3]]))
