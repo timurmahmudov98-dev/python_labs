@@ -56,3 +56,4 @@ def min_max(nums):
         raise ValueError
     
     return (min(nums), max(nums))
+![картинка 6](./images/lab02/01.png)
