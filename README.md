@@ -114,3 +114,20 @@ print(transpose([[]]))
 print(transpose([[1, 2], [3]]))
 ```
 ![картинка 9](./images/lab02/B1_lab02.png)
+
+## задание B.2
+```python
+def row_sums(mat):
+    if not mat:
+        return []
+    lenn1 = len(mat[0])
+    for i, row in enumerate(mat):
+        if len(row) != lenn1:
+            raise ValueError
+    return [int(sum(row)) for row in mat]
+print(row_sums([[1, 2, 3], [4, 5, 6]]))
+print(row_sums([[-1, 1], [10, -10]]))
+print(row_sums([[0, 0], [0, 0]]))
+print(row_sums([[1, 2], [3]]))
+```
+![картинка 10](./images/lab02/B_2_lab02.png)
