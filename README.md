@@ -49,7 +49,7 @@ print(f"Длина (символов): {length}")
 
 
 # Лабороторная работа №2
-## задание 1.1
+## задание 1
 ```python
 def min_max(nums):
     if not nums:
