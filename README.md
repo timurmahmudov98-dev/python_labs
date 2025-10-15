@@ -49,7 +49,7 @@ print(f"Длина (символов): {length}")
 
 
 # Лабороторная работа №2
-## задание 1
+## задание 1.1
 ```python
 def min_max(nums):
     if not nums:
@@ -64,3 +64,15 @@ print(min_max([1.5, 2, 2.0, -3.1]))
 print(min_max([]))
 ```
 ![картинка 6](./images/lab02/01.png)
+## задание 1.2
+```python
+def unique_sorted(n):
+    n = set(n)
+    return sorted(n)
+# тест кейсы
+print(unique_sorted([3, 1, 2, 1, 3]))
+print(unique_sorted([]))
+print(unique_sorted([-1, -1, 0, 2, 2]))
+print(unique_sorted([1.0, 1, 2.5, 2.5, 0]))
+```
+![картинка 7](./images/lab02/1_2_ex_lab02.png)
