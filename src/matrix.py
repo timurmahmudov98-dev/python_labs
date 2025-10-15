@@ -12,8 +12,8 @@ def transpose(mat):
             newrow.append(mat[rowindex][colindex])
         res.append(newrow)
     return res
-print(transpose([[1, 2, 3]]))
-print(transpose([[1], [2], [3]]))
-print(transpose([[1, 2], [3, 4]]))
-print(transpose([[]]))
-print(transpose([[1, 2], [3]]))
+#print(transpose([[1, 2, 3]]))
+#print(transpose([[1], [2], [3]]))
+#print(transpose([[1, 2], [3, 4]]))
+#print(transpose([[]]))
+#print(transpose([[1, 2], [3]]))
