@@ -47,7 +47,6 @@ print(f"Длина (символов): {length}")
 ```
 ![картинка 5](./images/lab01/05ex.png)
 
-
 # Лабороторная работа №2
 ## задание 1.1
 ```python
@@ -76,7 +75,6 @@ print(unique_sorted([-1, -1, 0, 2, 2]))
 print(unique_sorted([1.0, 1, 2.5, 2.5, 0]))
 ```
 ![картинка 7](./images/lab02/1_2_ex_lab02.png)
-
 ## задание 1.3
 ```pyhton
 def flatten(mat):
@@ -92,8 +90,7 @@ print(flatten([[1], [], [2, 3]]))
 print(flatten([[1, 2], "ab"]))
 ```
 ![картинка 8](./images/lab02/1_3_ex_lab02.png)
-
-##задание B.1
+## задание B.1
 ```python
 def transpose(mat):
     if not mat:
