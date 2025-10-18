@@ -154,7 +154,7 @@ print(col_sums([[0, 0], [0, 0]]))
 print(col_sums([[1, 2], [3]]))
 ```
 ![картинка 11](./images/lab02/B_3_lab02.png)
-## задание B.4
+## задание C
 ```python
 def format_record(rec):
     if not isinstance(rec, tuple) or len(rec) != 3:
@@ -204,4 +204,4 @@ if __name__ == "__main__":
     for test in test_cases:
         print(format_record(test))
 ```
-![картинка 12](./images/lab02/B_4_lab02.png)
+![картинка 12](./images/lab02/C_lab02.png)
