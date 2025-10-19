@@ -192,7 +192,7 @@ def format_record(rec):
     formatted_gpa = f"{gpa:.2f}"
     
     return f"{formatted_fio}, гр. {group_clean}, GPA {formatted_gpa}"
-#тест-кейсы
+#тест кейсы
 if __name__ == "__main__":
     test_cases = [
         ("Иванов Иван Иванович", "BIVT-25", 4.6),
