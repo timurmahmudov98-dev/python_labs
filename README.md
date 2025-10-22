@@ -85,6 +85,7 @@ def flatten(mat):
             raise TypeError
         res.extend(i)
     return res
+# тест кейсы
 print(flatten([[1, 2], [3, 4]]))
 print(flatten([[1, 2], (3, 4, 5)]))
 print(flatten([[1], [], [2, 3]]))
@@ -107,6 +108,7 @@ def transpose(mat):
             newrow.append(mat[rowindex][colindex])
         res.append(newrow)
     return res
+#тест кейсы
 print(transpose([[1, 2, 3]]))
 print(transpose([[1], [2], [3]]))
 print(transpose([[1, 2], [3, 4]]))
@@ -125,6 +127,7 @@ def row_sums(mat):
         if len(row) != lenn1:
             raise ValueError
     return [int(sum(row)) for row in mat]
+#тест кейсы
 print(row_sums([[1, 2, 3], [4, 5, 6]]))
 print(row_sums([[-1, 1], [10, -10]]))
 print(row_sums([[0, 0], [0, 0]]))
@@ -148,6 +151,7 @@ def col_sums(mat):
         for j in range(numcols):
             sums[j] += row[j]
     return sums
+#тест кейсы
 print(col_sums([[1, 2, 3], [4, 5, 6]]))
 print(col_sums([[-1, 1], [10, -10]]))
 print(col_sums([[0, 0], [0, 0]]))
