@@ -77,7 +77,7 @@ print(unique_sorted([1.0, 1, 2.5, 2.5, 0]))
 ![картинка 7](./images/lab02/1_2_ex_lab02.png)
 
 ## задание 1.3
-```pyhton
+```python
 def flatten(mat):
     res = []
     for i in mat:
