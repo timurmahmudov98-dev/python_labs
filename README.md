@@ -209,3 +209,5 @@ if __name__ == "__main__":
         print(format_record(test))
 ```
 ![картинка 12](./images/lab02/C_lab02.png)
+
+# Лабораторная работа №3
