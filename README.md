@@ -231,3 +231,8 @@ print(normalize("Hello\r\nWorld"))
 print(normalize(" двойные пробелы "))
 ```
 ![картинка 13](./images/lab03/Aex_lab03.png)
+
+## задание B 
+```python
+
+```
