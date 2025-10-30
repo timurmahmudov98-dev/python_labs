@@ -36,3 +36,10 @@ def tokenize(text):
 #print(tokenize("hello,world!!!"))
 #print(tokenize("по-настоящему круто"))
 #print(tokenize("emoji 😀 не слово"))
+def count_freq(tokens):
+    freq_dict = {}
+    for token in tokens:
+        freq_dict[token] = freq_dict.get(token, 0) + 1
+    return freq_dict
+#print(count_freq(["a","b","a","c","b","a"]))
+#print(count_freq(["bb","aa","bb","aa","cc"]))

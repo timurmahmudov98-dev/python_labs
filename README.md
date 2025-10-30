@@ -259,3 +259,15 @@ print(tokenize("по-настоящему круто"))
 print(tokenize("emoji 😀 не слово"))
 ```
 ![картинка 14](./images/lab03/A2exlab03.png)
+## задание A.3
+```python
+def count_freq(tokens):
+    freq_dict = {}
+    for token in tokens:
+        freq_dict[token] = freq_dict.get(token, 0) + 1
+    return freq_dict
+#тест кейсы
+print(count_freq(["a","b","a","c","b","a"]))
+print(count_freq(["bb","aa","bb","aa","cc"]))
+```
+![картинка 15](./images/lab03/A3exlab03.png)
