@@ -276,7 +276,12 @@ print(count_freq(["bb","aa","bb","aa","cc"]))
 def top_n(freq, n):
     sorted_items = sorted(freq.items(), key=lambda x: (-x[1], x[0]))
     return sorted_items[:n]
+#тест кейсы
 print(top_n({"a": 3, "b": 2, "c": 1},n=2))
 print(top_n({"bb": 2, "aa": 2, "cc": 1}, n=2))
 ```
 ![картинка 16](./images/lab03/A4lab03.png)
+## задание B
+```python
+
+```
