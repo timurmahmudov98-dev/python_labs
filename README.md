@@ -234,3 +234,27 @@ print(repr(normalize("Hello\r\nWorld")))
 print(repr(normalize("  двойные   пробелы  ")))
 ```
 ![картинка 13](./images/lab03/lab03exA1.png)
+## задание A.2
+```python
+def tokenize(text):
+    tokens = []
+    current_token = []
+    for ch in text:
+        if ch.isalnum() or ch == '_':
+            current_token.append(ch)
+        elif ch == '-' and current_token:
+            current_token.append(ch)
+        else:
+            if current_token:
+                tokens.append(''.join(current_token))
+                current_token = []
+    if current_token:
+        tokens.append(''.join(current_token))
+    
+    return tokens
+print(tokenize("привет мир"))
+print(tokenize("hello,world!!!"))
+print(tokenize("по-настоящему круто"))
+print(tokenize("emoji 😀 не слово"))
+```
+![картинка 14](./images/lab03/A2exlab03.png)
