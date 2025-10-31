@@ -32,6 +32,7 @@ def tokenize(text):
         tokens.append(''.join(current_token))
     
     return tokens
+
 #print(tokenize("привет мир"))
 #print(tokenize("hello,world!!!"))
 #print(tokenize("по-настоящему круто"))

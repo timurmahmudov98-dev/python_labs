@@ -10,7 +10,6 @@ def main():
     
     normalized_text = normalize(text)
     tokens = tokenize(normalized_text)
-
     if not tokens:
         print("В тексте не найдено слов")
         return
