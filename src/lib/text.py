@@ -1,4 +1,4 @@
-def normalize(text: str, *, casefold: bool = True, yo2e: bool = True) -> str:
+def normalize(text: str, *, casefold: bool = True, yo2e: bool = True):
     if yo2e:
         text = text.replace('ё', 'е').replace('Ё', 'Е')
     result = []
