@@ -7,7 +7,7 @@ def read_text(path, encoding ='utf-8'):
         return f.read()
 
 try:
-    text = read_text('src/data/lab04/input.txt', encoding='utf-8')
+    text = read_text('src/data/input.txt', encoding='utf-8')
     print(text)
 except FileNotFoundError:
     print('Файл не найден')
