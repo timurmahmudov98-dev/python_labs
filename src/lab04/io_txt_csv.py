@@ -18,9 +18,9 @@ except UnicodeDecodeError:
 def write_csv(rows, path, header):
     path = Path(path)
     if rows:
-        last_dlina = len(rows[-1])
+        last_len = len(rows[-1])
         for row in rows:
-            if len(row) != last_dlina:
+            if len(row) != last_len:
                 raise ValueError
     with open(path, 'w', newline = '', encoding = 'utf-8') as f:
         csv_maker = csv.writer(f, delimiter=',')
