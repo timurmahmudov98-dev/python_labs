@@ -397,4 +397,12 @@ except UnicodeDecodeError:
     print('Неподходящая кодировка')
 ```
 p.s пришлось переместить lib в src/lab04
+
 ![картинка 19](./images/lab04/Bex_lab04.png)
+
+# Лабороторная работа №5
+
+## задание A
+```python
+
+```
