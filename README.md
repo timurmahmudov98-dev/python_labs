@@ -529,13 +529,13 @@ if __name__ == "__main__":
     except Exception as e:
         print(f"Ошибка: {e}")
 ```
-# JSON -> CSV
+## JSON -> CSV
 ![картинка 20](./images/lab05/lab05_A_ex_saples_1.png)
 ![картинка 21](./images/lab05/lab05_A_ex_out_1.png)
 
-# CSV -> JSON
+## CSV -> JSON
 ![картинка 22](./images/lab05/lab05_A_ex_samples_2.png)
 ![картинка 23](./images/lab05/lab05_A_ex_out_2.png)
 
-# вывод терминала
+## вывод терминала
 ![картинка 24](./images/lab05/lab05_result_A_ex.png)
