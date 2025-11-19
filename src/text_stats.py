@@ -1,5 +1,5 @@
 import sys
-from lib.text import *
+from lab04.lib.text import *
 
 def main():
     text = sys.stdin.read()
