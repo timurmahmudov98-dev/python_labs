@@ -3,7 +3,9 @@ import sys
 from collections import Counter 
 from pathlib import Path 
 sys.path.append(r"C:\Users\user\Desktop\python_labs\src")
-from lib2_4lab06.text import *
+
+from lib_4lab06.text import *
+
 def cat_read_text(path, numeration = 0):
     new_path = Path(path)
     if not new_path.exists():

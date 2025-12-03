@@ -97,28 +97,3 @@ def csv_to_json(csv_path: str, json_path: str):
             json.dump(data, f, ensure_ascii=False, indent=2)
     except Exception as e:
         raise ValueError(f"Ошибка записи JSON: {e}")
-
-
-
-
-# Примеры использования (для тестирования)
-# if __name__ == "__main__":
-#     try:
-#         # Тест JSON -> CSV
-#         test_json = [
-#             {"name": "Alice", "age": 25, "country": "Russia", "city": "Moscow"},
-#             {"name": "Bob", "age": 30, "country": "USA", "city": "New York"},
-#             {"name": "Charlie", "age": 14, "country": "United Kingdom", "city": "London"}
-#         ]
-        
-#         with open('src/data/samples/people.json', 'w', encoding='utf-8') as f:
-#             json.dump(test_json, f, ensure_ascii=False, indent=2)
-        
-#         json_to_csv('src/data/samples/people.json', 'src/data/out/people_from_json.csv')
-#         print("JSON -> CSV: успешно")
-
-#         csv_to_json('src/data/samples/people.csv', 'src/data/out/people_from_csv.json')
-#         print("CSV -> JSON: успешно")
-        
-#     except Exception as e:
-#         print(f"Ошибка: {e}")
