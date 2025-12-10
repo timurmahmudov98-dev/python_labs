@@ -1,3 +1,27 @@
+# models.py
+Описание структуры класса Student:
+Атрибуты:
+fio - ФИО студента
+birthdate - Дата рождения в формате YYYY-MM-DD(год-месяц-число)
+group - название группы
+gpa - средний балл(от 0 до 5)
+
+Методы:
+__post_init__(self)
+Автоматически вызывается после инициализации объекта и ыполняет валидацию полей birthdate и gpa.
+
+age(self)
+Вычисляет текущий возраст студента в полных годах.
+
+to_dict(self)
+Преобразует объект в словарь с ключами: fio, birthdate, group, gpa.
+
+@classmethod from_dict(cls, data: Dict[str, Any]) -> 'Student'
+Создает объект Student из словаря 
+
+__str__(self)
+Возвращает строковое представление объекта
+
 ```python
 from dataclasses import dataclass, field
 from datetime import date, datetime

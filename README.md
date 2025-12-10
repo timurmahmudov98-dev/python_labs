@@ -854,7 +854,12 @@ def test_csv_to_json(sample_csv, tmp_path):
 ```
 ![картинка 30](./images/lab07/test_csv_json_4RM_lab07.png)
 
-# Black
+## Black
 ![картинка 31](./images/lab07/black_changes.png)
 
 ![картинка 32](./images/lab07/black_check_1.png)
+
+# Лабораторная работа №8
+## models.py
+
+![картинка 33](./src/lab08/images_lab08/models_lab08_res.png)
