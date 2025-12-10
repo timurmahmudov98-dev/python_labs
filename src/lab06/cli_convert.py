@@ -7,6 +7,7 @@ sys.path.append(r"C:\Users\user\Desktop\python_labs\src")
 from lib_with_funcs_from_lab05.csv_xlsx import *
 from lib_with_funcs_from_lab05.json_csv import *
 
+
 def main():
     parser = argparse.ArgumentParser(description="CLI для конвертации файла")
     subparsers = parser.add_subparsers(dest="command", help="Доступные команды")

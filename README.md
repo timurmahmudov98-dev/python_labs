@@ -853,3 +853,8 @@ def test_csv_to_json(sample_csv, tmp_path):
         assert json_reader[0]["city"] == "Moscow"
 ```
 ![картинка 30](./images/lab07/test_csv_json_4RM_lab07.png)
+
+# Black
+![картинка 31](./images/lab07/black_changes.png)
+
+![картинка 32](./images/lab07/black_check_1.png)

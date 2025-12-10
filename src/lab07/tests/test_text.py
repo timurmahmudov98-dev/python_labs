@@ -2,7 +2,6 @@ import pytest
 from lib_4text.text import normalize, tokenize, count_freq, top_n
 
 
-
 @pytest.mark.parametrize(  # подготовка параметров
     "source, expected",
     [
@@ -14,11 +13,6 @@ from lib_4text.text import normalize, tokenize, count_freq, top_n
         ("  ", ""),  # пустые строки с пробелами
     ],
 )
-
-
-
-
-
 def test_normalize(source, expected):
     assert normalize(source) == expected  # проверка
 
