@@ -861,5 +861,48 @@ def test_csv_to_json(sample_csv, tmp_path):
 
 # Лабораторная работа №8
 ## models.py
-
+```python
+if __name__== "__main__":
+    try:
+        s1 = Student("Иванов Иван Иванович", "2003-05-15", "ИВБО-01-21", 4.7)
+        print(s1)
+        print("Возраст:", s1.age())
+        s2 = Student("Сидоров Олег Викторович", "1999-11-01", "ИВБО-02-20", 7.0) # Ошибка
+    except ValueError as e:
+        print("Ошибка валидации:", e)
+```
 ![картинка 33](./src/lab08/images_lab08/models_lab08_res.png)
+
+## serialize.py
+```python
+# Создаем входной файл
+    students_to_json(students, "src/data/lab08/students_input.json")
+    print("Создан файл students_input.json")
+    
+    # 2. Читаем данные из входного файла
+    loaded_students = students_from_json("src/data/lab08/students_input.json")
+    print(f"Загружено {len(loaded_students)} студентов")
+    
+    # 3. Записываем результат в выходной файл
+    students_to_json(loaded_students, "src/data/lab08/students_output.json")
+    print("Создан файл students_output.json")
+    
+    # Проверяем, что файлы идентичны
+    with open("src/data/lab08/students_input.json", "r", encoding="utf-8") as f1, \
+         open("src/data/lab08/students_output.json", "r", encoding="utf-8") as f2:
+        content1 = f1.read()
+        content2 = f2.read()
+        
+    if content1 == content2:
+        print("Файлы students_input.json и students_output.json идентичны")
+    else:
+        print("Файлы различаются")
+    print("\nСтуденты из JSON")
+    for s in loaded_students:
+        print(s)
+        print()
+```
+
+![картинка 34](./src/lab08/images_lab08/serialize_result.png)
+![картинка 35](./src/lab08/images_lab08/students_input_json.png)
+![картинка 36](./src/lab08/images_lab08/students_output.png)
