@@ -875,6 +875,29 @@ if __name__== "__main__":
 
 ## serialize.py
 ```python
+def main():
+    # 1. Сначала запишем входные данные в файл (если его еще нет)
+    students = [
+        Student(
+            fio="Бибер Джастин Дрюевич",
+            birthdate="2007-11-04",
+            group="БИВТ-23-17",
+            gpa=3.01,
+        ),
+        Student(
+            fio="Иванов Иван Иванович",
+            birthdate="2009-01-18",
+            group="БИВТ-22-10",
+            gpa=5.0,
+        ),
+        Student(
+            fio="Пупкин Василий Сергеевич",
+            birthdate="2007-04-03",
+            group="БИВТ-21-11",
+            gpa=5.0,
+        ),
+    ]
+    
 # Создаем входной файл
     students_to_json(students, "src/data/lab08/students_input.json")
     print("Создан файл students_input.json")
